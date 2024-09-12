@@ -1,0 +1,383 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>VITO AT NOA MEETING - 2024</title>
+
+    <!-- Font Awesome CDN -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+
+    <style>
+        body,
+        html {
+            font-family: 'Poppins', sans-serif;
+            text-align: left;
+            background: linear-gradient(180deg, #FEDC00, black);
+            background-attachment: fixed;
+            background-size: cover;
+            background-repeat: no-repeat;
+            height: 100vh;
+            margin: 0;
+        }
+
+        .container {
+            width: 600px;
+            margin: 20px auto;
+            background-color: black;
+            color: white;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        h1 {
+            border-width: 8px;
+            border-style: solid;
+            border-radius: 1rem;
+            border-color: #fedc00;
+            padding: 2rem;
+            background-color: #000000;
+            font-size: 4rem;
+            font-weight: 900;
+            color: white;
+            box-shadow: 0 8px 0px #000000;
+        }
+
+        h2 {
+            border-width: 3px;
+            border-style: solid;
+            border-radius: 1rem;
+            border-color: black;
+            padding: 1rem;
+            background-color: #fedc00;
+            font-size: 2rem;
+            font-weight: 900;
+            color: black;
+            box-shadow: 0 4px 0px #000000;
+        }
+
+        .introduction-title {
+            text-align: center;
+            line-height: 3.5rem;
+        }
+
+        .section-image {
+            width: 100%;
+            height: auto;
+            border-radius: 1rem;
+            box-shadow: 0 8px 0px #000000;
+        }
+
+        .section-image-product {
+            width: 100%;
+            height: auto;
+            border-radius: 1rem;
+
+        }
+
+        .button-link {
+            background-color: white;
+            color: black;
+            font-size: 1.1rem;
+            border: 2px solid white;
+            padding: 1rem;
+            font-family: 'Poppins', sans-serif;
+            font-weight: 900;
+            cursor: pointer;
+            border-radius: 40px;
+            width: 50%;
+            max-width: 220px;
+            transition: background-color 0.3s, border-color 0.3s, padding 600ms, font-size 1200ms, width 300ms cubic-bezier(0.25, 0.1, 0.25, 1);
+            display: flex;
+            margin: 3rem auto;
+            text-decoration: none;
+            align-items: center;
+            justify-content: center;
+            box-shadow: 0 8px 0px #000000;
+        }
+
+        .button-link:hover {
+            background-color: #fedc00;
+            color: black;
+            /* Ensure the text color stays the same */
+            font-size: 1.4rem;
+            border-color: #fedc00;
+            padding: 2rem 0 2rem 0rem;
+            width: 60%;
+        }
+
+        .left-aligned-button {
+            margin: 3rem 0;
+            display: flex;
+            justify-content: center;
+        }
+
+        p {
+            font-size: 1.2rem;
+            line-height: 2.5rem;
+            margin: 1rem 2.5rem 0rem 2.5rem;
+            text-align: center;
+        }
+
+        strong {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            margin: 1rem 0 0 0;
+            font-size: 2.2rem;
+            color: #fedc00;
+            text-align: center;
+        }
+
+        .benefit-item {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
+            margin-bottom: 1.5rem;
+        }
+
+        .benefit-item i {
+            margin-top: 1rem;
+            /* Top margin for the first icon */
+            font-size: 3rem;
+            color: #fedc00;
+        }
+
+        .benefit-item strong {
+            margin-top: 1rem;
+            /* Spacing between icon and text */
+            font-size: 2rem;
+            font-weight: 900;
+        }
+
+        .benefit-item p {
+            margin-top: 1rem;
+            margin-bottom: 1rem;
+            /* Ensure proper spacing at the bottom */
+        }
+
+        .contact-buttons {
+            display: flex;
+            justify-content: space-around;
+            gap: 1rem;
+        }
+
+        .footer {
+            margin-top: 50px;
+            padding-top: 20px;
+            background-color: #FEDC00;
+            padding: 3rem;
+            border-radius: 1rem;
+        }
+
+        .footer .footer-image {
+            width: 100%;
+            height: auto;
+            border-radius: 1rem;
+            box-shadow: 0 8px 0px #000000;
+        }
+
+        .social-icons {
+            display: flex;
+            justify-content: space-evenly;
+            margin-top: 20px;
+            padding: 1rem 0;
+        }
+
+        .social-icons i {
+            color: black;
+            margin: 0 10px;
+            font-size: 2rem;
+            transition: transform 0.3s;
+        }
+
+        .social-icons i:hover {
+            transform: scale(1.2);
+        }
+
+        .contact-info {
+            text-align: center;
+            margin-top: 20px;
+            font-size: 1.2rem;
+        }
+
+        .contact-info i {
+            margin-right: 10px;
+            font-size: 2rem;
+            color: black;
+        }
+
+        .contact-item {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin: 10px 0;
+        }
+
+        .contact-link {
+            color: black;
+            justify-content: space-between;
+            align-items: center;
+            display: flex;
+            text-decoration: none;
+        }
+
+        .contact-wrapper {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-around;
+            align-items: start;
+        }
+
+        .disclaimer {
+            font-size: 1rem;
+            color: black;
+        }
+
+        h2.footer-heading {
+            color: #000000;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container"> <!-- Container div for the main content -->
+        <a class="heading-link" id="vito-promotion">
+            <h1 class="introduction-title">VITO WILL BE AT THE NOA MEETING</h1> <!-- Main heading with promotion -->
+        </a>
+
+        <!-- Promotional Image -->
+        <a href="https://shop.vitofryfilter.com" target="_blank">
+            <img src="./NOA-MailingBanner.png"
+                alt="VITO Fryfilter NOA Promotion" class="section-image" />
+        </a>
+
+        <div class="section-separator">
+            <h2>VISIT US AT BOOTH #40!</h2> <!-- New heading separating the event messaging -->
+        </div>
+
+        <!-- Event messaging -->
+        <div class="benefit-item">
+            <i class="fas fa-map-marker-alt"></i> <!-- Icon for booth location -->
+            <strong>VITO Fryfilter at NOA Annual Meeting</strong> <!-- Bold heading for booth announcement -->
+        </div>
+        <p>We’re excited to be part of the National Owners Association 7th Annual Meeting in Frisco, Texas. Come visit
+            us at booth #40 to learn how you can save up to 50% on frying oil and improve food quality with VITO
+            Fryfilter!</p>
+
+        <div class="benefit-item">
+            <i class="fas fa-tools"></i> <!-- Icon for labor savings -->
+            <strong>Why Visit?</strong> <!-- Bold heading for benefits of visiting -->
+        </div>
+        <ul>
+            <li>Exclusive product demonstrations showing how VITO systems streamline kitchen operations.</li>
+            <li>Special offers and discounts available only at the event.</li>
+            <li>Meet our team of experts for personalized recommendations on optimizing your fryers.</li>
+        </ul>
+
+        <!-- Call-to-action buttons -->
+      
+        <div class="contact-buttons">
+            <a href="https://shop.vitofryfilter.com/collections/vito-particle-filters" target="_blank"
+                class="button-link left-aligned-button">BUY FILTERS</a> <!-- Button linking to particle filters -->
+            <a href="tel:+18478590398" class="button-link left-aligned-button">Call Us</a>
+            <a href="https://docdro.id/TvafA0E" class="button-link left-aligned-button">Floorplan</a>
+        </div>
+
+
+
+        <!-- Corporate Messaging Separator -->
+        <div class="section-separator">
+            <h2>WHY CHOOSE VITO FRYFILTER?</h2> <!-- New heading separating the corporate messaging -->
+        </div>
+
+        <!-- Corporate messaging and benefits -->
+        <div class="benefit-item">
+            <i class="fas fa-money-bill-wave"></i> <!-- Icon for cost reduction -->
+            <strong>REDUCE COSTS</strong> <!-- Bold heading for cost reduction -->
+        </div>
+        <p>Save on oil and labor by utilizing our VITO Fryfilter, which reduces frying oil costs and enhances food
+            quality with cleaner oil.</p>
+
+        <div class="benefit-item">
+            <i class="fas fa-utensils"></i> <!-- Icon for food quality -->
+            <strong>IMPROVE FOOD QUALITY</strong> <!-- Bold heading for improved food quality -->
+        </div>
+        <p>With cleaner oil, your food will taste better, have a crispier texture, and last longer between oil changes.
+        </p>
+
+        <div class="benefit-item">
+            <i class="fas fa-tools"></i> <!-- Icon for labor savings -->
+            <strong>STREAMLINE YOUR OPERATION</strong> <!-- Bold heading for streamlining operations -->
+        </div>
+        <p>VITO Fryfilter reduces fryer maintenance and labor time, helping your kitchen operate more efficiently.</p>
+
+        <!-- Button to buy particle filters -->
+        <div class="contact-buttons">
+            <a href="https://shop.vitofryfilter.com/collections/vito-particle-filters" target="_blank"
+                class="button-link left-aligned-button">BUY FILTERS</a> <!-- Button linking to particle filters -->
+        </div>
+        <!-- Call-to-action buttons -->
+        <div class="contact-buttons">
+            <a href="https://shop.vitofryfilter.com" target="_blank" class="button-link left-aligned-button">Shop
+                Now</a> <!-- Button linking to shop -->
+            <a href="tel:+18478590398" class="button-link left-aligned-button">Call Us</a>
+            <!-- Button linking to call -->
+        </div>
+
+        <!-- Footer section -->
+        <div class="footer">
+            <h2 class="footer-heading">Follow Us!</h2> <!-- Footer heading for social links -->
+            <div class="social-icons">
+                <!-- Social media icons with links -->
+                <a href="https://www.facebook.com/VitoFilterUSA" target="_blank">
+                    <i class="fab fa-facebook fa-2x"></i>
+                </a>
+                <a href="https://www.instagram.com/vitofilter" target="_blank">
+                    <i class="fab fa-instagram fa-2x"></i>
+                </a>
+                <a href="https://twitter.com/vitofilter" target="_blank">
+                    <i class="fab fa-twitter fa-2x"></i>
+                </a>
+                <a href="https://www.linkedin.com/company/vito-filter" target="_blank">
+                    <i class="fab fa-linkedin fa-2x"></i>
+                </a>
+            </div>
+
+            <!-- Contact information with links -->
+            <div class="contact-info">
+                <a href="https://shop.vitofryfilter.com" target="_blank">
+                    <img src="https://d15k2d11r6t6rl.cloudfront.net/public/users/Integrators/BeeProAgency/594301_576008/BannerBottom.png"
+                        alt="Footer Image" class="footer-image" /> <!-- Footer image with link to shop -->
+                </a>
+                <a href="https://vitofilter.com/en-us" target="_blank" class="contact-link">
+                    <div class="contact-item">
+                        <i class="fas fa-globe"></i> www.vitofryfilter.com
+                    </div>
+                </a>
+                <a href="mailto:info@vitofryfilter.com" class="contact-link">
+                    <div class="contact-item">
+                        <i class="fas fa-envelope"></i> info@vitofryfilter.com
+                    </div>
+                </a>
+                <a href="tel:+18478590398" class="contact-link">
+                    <div class="contact-item">
+                        <i class="fas fa-phone"></i> +1 847-859-0398
+                    </div>
+                </a>
+                <!-- Disclaimer text -->
+                <p class='disclaimer'>VITO is a trademark of VITO AG, Germany. All products are made in Germany and used
+                    by over 50,000 customers worldwide. If you do not wish to receive future VITO emails, please
+                    contact us.</p>
+            </div>
+        </div>
+    </div>
+</body>
+
+
+
+</html>
